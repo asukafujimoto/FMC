@@ -3,8 +3,93 @@
 <head>
     <meta charset="utf-8">
     <title>フラッシュあんざん</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fmc.css">
 </head>
 <body>
     <h1>フラッシュあんざん</h1>
+    <!-- setting -->
+    <div id="divSetting" class="setting">
+        <div class="setting-button">
+            <button id="btnDigitPlus" class="button-plus">＋</button>
+            <div class="button-title">けたすう</div>
+            <div id="divDigitValue" class="button-value">3</div>
+            <div class="button-unit">けた</div>
+            <button id="btnDigitMinus" class="button-minus">－</button>
+        </div>
+        <div class="setting-button">
+            <button id="btnSpeedPlus" class="button-plus">＋</button>
+            <div class="button-title">スピード</div>
+            <div id="divSpeedValue" class="button-value">0.5</div>
+            <div class="button-unit">びょう</div>
+            <button id="btnSpeedMinus" class="button-minus">－</button>
+        </div>
+        <div class="setting-button">
+            <button id="btnQuestionsPlus" class="button-plus">＋</button>
+            <div class="button-title">かいすう</div>
+            <div id="divQuestionsValue" class="button-value">5</div>
+            <div class="button-unit">かい</div>
+            <button id="btnQuestionsMinus" class="button-minus">－</button>
+        </div>
+        <button id="btnStart" class="button-main">スタート</button>
+    </div>
+
+    <!-- main -->
+    <div id="divMain" class="main" style="display: none;">
+        <div id="divNumber" class="main-number"></div>
+        <button id="btnResult" class="button-main">けっかをひょうじする</button>
+    </div>
+
+    <!-- result -->
+    <div id="divResult" class="result" style="display: none;">
+        <div id="divResult3Box" class="result-box">
+            <div class="result-header">３けた</div>
+            <div id="divResult3Value" class="result-value">9,999</div>
+            <div class="result-footer"></div>
+        </div>
+        <div id="divResult2Box" class="result-box">
+            <div class="result-header">２けた</div>
+            <div id="divResult2Value" class="result-value">9,999</div>
+            <div class="result-footer"></div>
+        </div>
+        <div id="divResult1Box" class="result-box">
+            <div class="result-header">１けた</div>
+            <div id="divResult1Value" class="result-value">9,999</div>
+            <div class="result-footer"></div>
+        </div>
+        <button id="btnReturn" class="button-main">さいしょにもどる</button>
+    </div>
+
+    <!-- audio -->
+    <audio id="sound_shownumber" preload="auto">
+        <source src="audio/shownumber.mp3" type="audio/mp3">
+    </audio>
+    <audio id="sound_bubble" preload="auto">
+        <source src="audio/bubble.mp3" type="audio/mp3">
+    </audio>
+    <audio id="sound_count3" preload="auto">
+        <source src="audio/count3.mp3" type="audio/mp3">
+    </audio>
+    <audio id="sound_count2" preload="auto">
+        <source src="audio/count2.mp3" type="audio/mp3">
+    </audio>
+    <audio id="sound_count1" preload="auto">
+        <source src="audio/count1.mp3" type="audio/mp3">
+    </audio>
+    <audio id="sound_hazime" preload="auto">
+        <source src="audio/hazime.mp3" type="audio/mp3">
+    </audio>
+    <audio id="sound_sokomade" preload="auto">
+        <source src="audio/sokomade.mp3" type="audio/mp3">
+    </audio>
+    <audio id="sound_otsukaresamadeshita" preload="auto">
+        <source src="audio/otsukaresamadeshita.mp3" type="audio/mp3">
+    </audio>
+    <audio id="sound_mataasondene" preload="auto">
+        <source src="audio/mataasondene.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- js -->
+    <script src="js/fmc.js"></script>
 </body>
 </html>
